@@ -1,4 +1,11 @@
-# HelloNerves
+# nrf69
+Test the RF69 radio on Nerves
+
+### Pin Translation for my pi0
+
+* reset_pin: 22
+* ss_pin: 24 // CS
+* irq_pin: 18 // G0
 
 **TODO: Add description**
 
