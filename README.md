@@ -5,7 +5,13 @@ Test the RF69 radio on Nerves
 
 * reset_pin: 22
 * ss_pin: 24 // CS
-* irq_pin: 18 // G0
+* irq_pin: 15 // G0
+
+
+iex(1)> {:ok, pid} = NRF69.NReceiver.start()
+
+iex(2)> Process.send_after(pid, :hello, 1500)
+
 
 **TODO: Add description**
 
